@@ -1,6 +1,10 @@
 import Link from "next/link"
-
+import { useRouter } from "next/router"
 const Home = () => {
+  const router = useRouter()
+  const shoppingHandler = () => {
+    router.push("/product")
+  }
   return (
     <div>
       <h2>Home Page</h2>
@@ -12,6 +16,8 @@ const Home = () => {
           <a>Products</a>
         </Link></li>
       </ul>
+
+      <button onClick={shoppingHandler}>Go To Shopping</button>
 
 
     </div>
