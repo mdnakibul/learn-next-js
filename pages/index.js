@@ -15,6 +15,9 @@ const Home = () => {
         <li><Link href="/product">
           <a>Products</a>
         </Link></li>
+        <li><Link href="/docs">
+          <a>See Docs</a>
+        </Link></li>
       </ul>
 
       <button onClick={shoppingHandler}>Go To Shopping</button>
